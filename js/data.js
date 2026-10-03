@@ -11,6 +11,37 @@ window.portfolioData = {
     'Current President of BUP Robotics Club',
     'Current Associate Head of Documentation, BUP Photography Society'
   ],
+  projects: [
+    {
+      title: 'GridWise Campus Energy Optimizer',
+      description: 'A FastAPI service that turns hourly campus demand, solar and battery inputs, and operator notes into a 24-hour energy plan. Directive validation and a PuLP mixed-integer optimizer minimize grid cost while honoring battery and scheduling constraints.',
+      tags: ['Python', 'FastAPI', 'PuLP', 'Google Gemini', 'Docker'],
+      repoUrl: 'https://github.com/CoderPanda1463/Smart-Grid-Planning-LKCJ-BUP-CSE-Fest-',
+      featured: true
+    },
+    {
+      title: 'VitalSync Health Tracker',
+      description: 'A Flask and MySQL web application for recording health routines, including meals, sleep, exercise, weight, steps, stress, and goals. Its pages also present weekly summaries and reports based on the saved records.',
+      tags: ['Python', 'Flask', 'MySQL', 'HTML', 'JavaScript'],
+      repoUrl: 'https://github.com/CoderPanda1463/Vitalsync',
+      featured: true,
+      needsReview: true
+    },
+    {
+      title: 'SMS Spam Classifier',
+      description: 'A notebook that cleans and lemmatizes labeled SMS text, then trains a TF-IDF and LinearSVC pipeline to classify messages as spam or ham. It also explores the dataset and evaluates the classifier with classification metrics and cross-validation.',
+      tags: ['Python', 'Jupyter Notebook', 'Pandas', 'scikit-learn', 'NLTK'],
+      repoUrl: 'https://github.com/CoderPanda1463/SMS-spam-ham',
+      featured: true
+    },
+    {
+      title: 'RAM Checker',
+      description: 'A Java console prototype with separate DDR3, DDR4, and DDR5 models. A menu lets users browse predefined memory entries by generation, including manufacturer and bus speed.',
+      tags: ['Java', 'Maven'],
+      repoUrl: 'https://github.com/CoderPanda1463/Ram_Checker',
+      featured: false
+    }
+  ],
   education: [
     { title: 'B.Sc in ICE', detail: 'Bangladesh University of Professionals; 4th year, running CGPA 3.76' },
     { title: 'HSC', detail: 'Dhaka City College; GPA 5' },
@@ -19,6 +50,7 @@ window.portfolioData = {
   interests: ['Robotics', 'Photography'],
   links: {
     LinkedIn: 'https://www.linkedin.com/in/fuad-al-hasan-b046b3380/',
+    GitHub: 'https://github.com/CoderPanda1463',
     Facebook: 'https://www.facebook.com/general.fuad'
   },
   cv: { src: 'assets/cv/Fuad_CV_P.pdf', downloadName: 'Fuad_CV_P.pdf', label: 'Download CV' },
