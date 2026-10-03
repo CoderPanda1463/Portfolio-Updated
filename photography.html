@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f6f3">
+  <meta name="description" content="Mobile photography by Fuad Al Hasan.">
+  <title>Photography | Fuad Al Hasan</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <script>(() => { const saved = localStorage.getItem('fuad-portfolio-theme'); const system = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'; document.documentElement.dataset.theme = saved || system; })();</script>
+  <link rel="stylesheet" href="css/themes.css"><link rel="stylesheet" href="css/main.css"><link rel="stylesheet" href="css/responsive.css"><link rel="stylesheet" href="css/gallery.css">
+  <script src="js/data.js" defer></script><script src="js/theme.js" defer></script><script src="js/gallery.js" defer></script>
+</head>
+<body class="gallery-page">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header"><nav class="site-nav page-shell" aria-label="Main navigation">
+    <a class="site-nav__brand" href="index.html" aria-label="Fuad Al Hasan, home">FAH<span>.</span></a>
+    <button class="site-nav__menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu" aria-label="Open navigation menu"><span></span><span></span></button>
+    <div class="site-nav__menu" id="site-menu"><a class="site-nav__link" href="index.html#home">Home</a><a class="site-nav__link" href="index.html#about">About</a><a class="site-nav__link" href="index.html#education">Education</a><a class="site-nav__link" href="index.html#leadership">Leadership</a><a class="site-nav__link" href="index.html#interests">Interests</a><a class="site-nav__link site-nav__link--active" href="photography.html" aria-current="page">Photography</a><a class="site-nav__link" href="index.html#contact">Contact</a>
+      <button class="theme-toggle" type="button" aria-label="Switch to dark theme" title="Switch theme"><svg class="theme-toggle__icon theme-toggle__icon--sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"></path></svg><svg class="theme-toggle__icon theme-toggle__icon--moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.2 15.1A8.5 8.5 0 0 1 8.9 3.8 8.5 8.5 0 1 0 20.2 15.1Z"></path></svg></button>
+    </div>
+  </nav></header>
+  <main id="main-content">
+    <section class="gallery-heading page-shell reveal"><a class="gallery-heading__back" href="index.html#interests">← Portfolio</a><p class="eyebrow">Through My Lens</p><h1>Photography<span>.</span></h1><p class="gallery-heading__description">A collection of photographs by <span data-gallery-name></span>.</p><span class="gallery-heading__count" id="photo-count" aria-live="polite"></span></section>
+    <section class="page-shell gallery-grid-wrap" aria-label="Photography gallery"><div class="photo-grid" id="photo-grid"></div></section>
+  </main>
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-labelledby="lightbox-title" aria-hidden="true"><button class="lightbox__close" type="button" aria-label="Close image viewer">×</button><button class="lightbox__nav lightbox__nav--previous" type="button" aria-label="Previous image">‹</button><figure class="lightbox__figure"><img class="lightbox__image" alt=""><figcaption class="lightbox__caption"><span class="lightbox__title" id="lightbox-title"></span><span class="lightbox__position"></span></figcaption></figure><button class="lightbox__nav lightbox__nav--next" type="button" aria-label="Next image">›</button></div>
+  <footer class="site-footer"><div class="page-shell site-footer__inner"><a class="site-footer__brand" href="index.html">FAH<span>.</span></a><p data-profile="name"></p><a class="site-footer__top" href="#main-content">Back to top ↑</a></div></footer>
+</body>
+</html>
